@@ -1,2 +1,3 @@
-drawName('John');
+message = 'Hello World';
+drawName(message);
 bounceBubbles();
