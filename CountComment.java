@@ -5,7 +5,7 @@ public class CountComment {
       //This is where you will define your variable
       int numComments = 6;
       //This is where you will print your variable
-      
+      System.out.println(numComments);
       }
     
     //This is the end of the class
