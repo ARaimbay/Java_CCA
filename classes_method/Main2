@@ -1,0 +1,10 @@
+public class Main2{
+  String product;
+  int count;
+  double cost;
+
+  public static void main(String[] args) { 
+    Store cookieShop = new Store("cookies", 12, 3.75); 
+
+  }
+}
