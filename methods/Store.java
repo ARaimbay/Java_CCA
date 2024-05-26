@@ -9,6 +9,6 @@ public class Store {
       
     // Add advertise method below
     public void advertise() {
-  
+        System.out.println("Come spend some money! Selling " + productType + "!");
     }
   }
