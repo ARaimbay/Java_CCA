@@ -26,7 +26,11 @@ public class Order2 {
       if (shipping.equals("Regular")) {
         return 0;
       } else if (shipping.equals("Express")) {
-        return 1.75;
+        if (couponCode.equals("ship50")) {
+          return .85;
+        } else return 1.75;
+      
+        
       } else {
         return .50;
       }
