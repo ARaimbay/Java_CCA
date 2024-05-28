@@ -6,7 +6,7 @@ public class Order {
       
       // Write an if-then statement:
       if (itemCost > 24.00) {
-        System.out.println("High value item!")
+        System.out.println("High value item!");
       }
       
     }
