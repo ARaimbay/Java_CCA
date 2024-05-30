@@ -11,11 +11,10 @@ public class Reservation {
     }  
     
     public void confirmReservation () {
-      if (restaurantCapacity >= guestCount && true) {
+      if (restaurantCapacity >= guestCount && isRestaurantOpen) {
         System.out.println("Reservation confirmed.");
         isConfirmed = true;
-      }
-      else {
+      } else {
         System.out.println("Reservation denied.");
         isConfirmed = false;
       }
