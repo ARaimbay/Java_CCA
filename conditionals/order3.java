@@ -36,7 +36,6 @@ public class Order {
   
       }
       
-      //return shippingCost;
        }
     
     public static void main(String[] args) {
