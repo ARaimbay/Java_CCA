@@ -11,6 +11,7 @@ public class Newsfeed3 {
     
     public void setFavoriteArticle(int favoriteIndex, String newArticle){
       // Add newArticle to favoriteArticles:
+      favoriteArticles[favoriteIndex] = newArticle;
       
     }
   }
