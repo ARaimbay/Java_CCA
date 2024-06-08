@@ -1,5 +1,5 @@
 public class CheckingAccount1{
-    private String name;
+    public String name;
     private int balance;
     private String id;
     
