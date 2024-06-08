@@ -11,4 +11,7 @@ public class CheckingAccount3{
     public int getBalance(){
       return this.balance;
     }
+    public void setBalance(int newBalance){
+      balance = newBalance;
+    }
   }
