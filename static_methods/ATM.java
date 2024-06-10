@@ -1,6 +1,8 @@
 public class ATM{
 
     // Step 2: Create your static variables here
+    public static int totalMoney = 0;
+    public static int numATMs = 0;
   
     // Instance variables
     public int money;
