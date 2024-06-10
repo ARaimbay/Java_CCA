@@ -1,4 +1,4 @@
-public class Person{
+public class Person1{
     public int age;
     public int wisdom;
     public int fitness;
