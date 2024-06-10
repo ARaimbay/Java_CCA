@@ -10,7 +10,7 @@ public class ATM2{
       this.money = inputMoney;
   
       // Steps 1 and 2: Edit numATMs and total money here
-      totalMoney += numATMs;
+      totalMoney += inputMoney;
       numATMs += 1;
     }
   
