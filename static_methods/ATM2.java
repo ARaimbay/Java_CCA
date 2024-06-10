@@ -18,6 +18,7 @@ public class ATM2{
       if(amountToWithdraw <= this.money){
         this.money -= amountToWithdraw;
         // Step 3: Edit totalMoney here
+        totalMoney -= amountToWithdraw;
       }
     }
   
