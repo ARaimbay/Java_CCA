@@ -14,7 +14,9 @@ public class SavingsAccount{
   
     public void addMoney(int balanceDollar){
       // Complete this method
+      System.out.println("Adding " + balanceDollar + " dollars to the account.");
       this.balanceDollar += balanceDollar;
+      System.out.println("The new balance is " + this.balanceDollar + " dollars.");
     }
   
   }
