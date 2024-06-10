@@ -25,6 +25,9 @@ public class ATM{
       // Step 3: Print your static variable in three different ways here
       System.out.println(firstATM);
       System.out.println(secondATM);
+      System.out.println(ATM.totalMoney);
+      System.out.println(firstATM.totalMoney);
+      System.out.println(secondATM.totalMoney);
     }
   
   }
