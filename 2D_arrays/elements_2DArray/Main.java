@@ -8,5 +8,7 @@ public class Main {
 		};
     int retrievedInt = intMatrix[0][3];
     System.out.println(retrievedInt);
+    int middleValue = intMatrix[1][2];
+    System.out.println(3 * middleValue);
   }
 }
