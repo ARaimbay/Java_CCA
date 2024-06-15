@@ -18,9 +18,15 @@ public class Loops {
     String[][] wordData = {{"study", "consider", "examine", "learn"}, {"ponder", "read", "think", "cogitate"}};	
     
 		int i = 0;
-    int j = 0;
-
-		//System.out.println(wordData[i][j] + ": [" + i + "]" + "[" + j + "]");
+        int j = 0;
+        while(i< wordData.length) {
+            j=0;
+            while(j<wordData[i].length) {
+              System.out.println(wordData[i][j] + ": [" + i + "]" + "[" + j + "]");
+              j++;
+            }
+            i++;
+          }
 
 	}
 }
