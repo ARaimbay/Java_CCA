@@ -13,7 +13,7 @@ public class Row_Major {
         
 			}
             double averageVal = 0;
-            averageVal = runnerTime / times[outer].length;
+            averageVal = runnerTime / times.length;
 
 			System.out.println("Sum of runner " + outer + " times: " + runnerTime);
 			System.out.println("Average of runner " + outer + ": " + averageVal);
