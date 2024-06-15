@@ -9,6 +9,7 @@ public class Row_Major {
 			for(int inner = 0; inner < times[outer].length; inner++) {
         		System.out.println("Runner index: " + outer + ", Time index: " + inner);
 				// Add a line to sum up the values in each row.
+                runnerTime += times[outer][inner];
         
 			}
       double averageVal = 0;
