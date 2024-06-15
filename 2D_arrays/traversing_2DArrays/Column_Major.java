@@ -9,6 +9,7 @@ public class Column_Major {
 			for(int inner = 0; inner < times.length; inner++){
 				System.out.println("Lap index: " + outer + ", Time index: " + inner);
 				// Add a line to sum up the values
+				lapTime += times[inner][outer];
         
 			}
 			double averageVal = 0;
