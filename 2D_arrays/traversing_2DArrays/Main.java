@@ -17,6 +17,7 @@ public class Main {
 				
 			}
 		}
+        int rows = intMatrix.length;
 		System.out.println(sum);
 	}
 }
