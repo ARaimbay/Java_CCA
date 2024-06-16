@@ -12,6 +12,11 @@ public class Combi {
 		
 
 		// Add a nested `for` loop and copy the data of `imagedata` to `newImage`
+        for (int i=0; i<newImage.length; i++){
+            for(int j=0; j<newImage[i].length; j++){
+              newImage[i][j] = imageData[i][j];
+            }
+          }
     
 
 		System.out.println(Arrays.deepToString(newImage));
