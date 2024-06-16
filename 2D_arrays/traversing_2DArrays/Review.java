@@ -22,6 +22,11 @@ public class Review {
 
 
   	//Use `for` loops to copy the scores below
+    for (int i=0; i<newScores.length; i++){
+        for(int j=0; j<newScores[i].length; j++){
+          newScores[i][j] = scores[i][j];
+        }
+      }
     
 
   	System.out.println(Arrays.deepToString(newScores));
