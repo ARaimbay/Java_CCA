@@ -18,6 +18,7 @@ public class Review {
   	System.out.println(Arrays.deepToString(scores));
 		
   	//Declare and initialize an empty 4x2 2D array of double values called `newScores` below
+    double[][] newScores = new double[4][2];
 
 
   	//Use `for` loops to copy the scores below
