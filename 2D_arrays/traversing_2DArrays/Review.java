@@ -2,13 +2,17 @@ import java.util.Arrays;
 public class Review {
 	public static void main(String[] args) {  
 
-		//Declare and initialize a 4x3 2D array of doubles called `scores` below
+	//Declare and initialize a 4x3 2D array of doubles called `scores` below
     double[][] scores = {{80.4, -1, -1}, {96.2, -1, -1},{100.0, -1, -1},{78.9, -1, -1}};
 
 
   	System.out.println(Arrays.deepToString(scores));
 
-		//Manually enter the scores for the second exam below
+	//Manually enter the scores for the second exam below
+    scores[0][1]=89.7;
+    scores[1][1]=90.5;
+    scores[2][1]=93.6;
+    scores[3][1]=88.1;
 
 
   	System.out.println(Arrays.deepToString(scores));
