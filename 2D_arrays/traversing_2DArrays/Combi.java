@@ -22,8 +22,14 @@ public class Combi {
 		System.out.println(Arrays.deepToString(newImage));
 			
 		for(int i=0; i<newImage.length; i++){
-      for(int j=0; j<newImage[i].length; j++){
-        // Add the if-else statement here
+            for(int j=0; j<newImage[i].length; j++){
+            // Add the if-else statement here
+            if(newImage[i][j]-50<0){
+                newImage[i][j] = 0;
+              } 
+            else{
+                newImage[i][j]-=50;
+            }
         
       }
     }
