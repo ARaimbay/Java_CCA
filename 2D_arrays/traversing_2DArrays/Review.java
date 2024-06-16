@@ -32,6 +32,13 @@ public class Review {
   	System.out.println(Arrays.deepToString(newScores));
 
   	//Iterate through the `newScores` 2D array and use `if` statement to add 2 additional points below
+    for (int i=0; i<newScores.length; i++){
+        for(int j=0; j<newScores[i].length; j++){
+          if(newScores[i][j]<90){
+            newScores[i][j] += 2;
+      }
+        }
+      }
     
     System.out.println(Arrays.deepToString(newScores));
 	}
