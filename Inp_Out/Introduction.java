@@ -3,6 +3,7 @@ public class Introduction {
         String name = "Aigerim Raimbay";
         String hobbies = "running";
         int age = 34;
+        System.out.println("My name is " + name);
   
     }
   }
