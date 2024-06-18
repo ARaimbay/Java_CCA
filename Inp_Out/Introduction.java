@@ -4,6 +4,7 @@ public class Introduction {
         String hobbies = "running";
         int age = 34;
         System.out.println("My name is " + name);
+        System.out.printf("I am %d years old\n", age);
   
     }
   }
