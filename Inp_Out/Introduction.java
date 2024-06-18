@@ -1,8 +1,8 @@
 public class Introduction {
-    String name;
-    String hobbies;
-    int age;
     public static void main(String[] args) {
+        String name = "Aigerim Raimbay";
+        String hobbies = "running";
+        int age = 34;
   
     }
   }
