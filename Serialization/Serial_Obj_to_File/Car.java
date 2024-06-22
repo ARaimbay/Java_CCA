@@ -12,5 +12,7 @@ public class Car implements Serializable {
   public static void main(String[] args) throws FileNotFoundException, IOException {
     Car toyota = new Car("Toyota", 2021);
     Car honda = new Car("Honda", 2020);
+    FileOutputStream fileOutputStream = new FileOutputStream("cars.txt");
+    ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
   }
 }
