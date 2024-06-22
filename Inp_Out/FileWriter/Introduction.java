@@ -6,6 +6,7 @@ public class Introduction {
     FileWriter output = new FileWriter("output.txt");
     String outputText = "Hello to me";
     output.write(outputText);
+    output.close();
   }
-  output.close();
+  
 }
