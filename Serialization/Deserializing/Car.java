@@ -32,5 +32,10 @@ public class Car implements Serializable {
     Car toyotaCopy = (Car)objectInputStream.readObject();
     Car hondaCopy = (Car)objectInputStream.readObject();
 
+    boolean isSameObject = toyotaCopy == toyota;
+    System.out.println("Toyota (Copy) is " +toyotaCopy);
+    System.out.println("Toyota (Original) is " +toyota);
+    System.out.println("Is same object: " +isSameObject);
+
   }
 }
