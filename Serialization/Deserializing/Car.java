@@ -27,5 +27,8 @@ public class Car implements Serializable {
     ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
     objectOutputStream.writeObject(toyota);
     objectOutputStream.writeObject(honda);
+    FileInputStream fileInputStream = new FileInputStream("cars.txt");
+    ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+
   }
 }
