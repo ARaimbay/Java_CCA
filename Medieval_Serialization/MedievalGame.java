@@ -1,10 +1,15 @@
 import java.util.Scanner;
 import java.util.Objects;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
+import java.io.IOException;
+
 
 
 public class MedievalGame {
@@ -58,15 +63,33 @@ public class MedievalGame {
   private void save() {
     // Add save functionality here
     String fileName = instanceVariable.getAttribute() + ".srv";
+    try {
     FileOutputStream userSaveFile = new FileOutputStream(fileName);
     ObjectOutputStream playerSaver = new ObjectOutputStream(FileOutputStream);
     ObjectOutputStream.writeObject(this.player);
 
-
+    } catch(IOException e){
+        System.err.println("IOException: " +e.getMessage());
+    }
   } // End of save
 
   private Player load(String playerName, Scanner console) {
     // Add load functionality here
+    Player loadedPlayer;
+    try{
+      FileInputStream userSaveFile = new FileInputStream(playerName + ".srv");
+      ObjectInputStream objectInputStream = new ObjectInputStream(userSaveFile);
+      myPlayer = (Player) objectStream.readObject();
+
+    } catch(ClassNotFoundException e){
+      addDelay(1500);
+      System.out.println("\nThere was a problem loading your character, we've created a new player with the name you entered.");
+      System.out.println("If you're sure the spelling is correct, your character file may no longer exist, please reload the game if you'd like to try again.");
+      System.out.println("In the mean time, we'll create you a new character with the name: " + playerName);
+      System.out.println("In the mean time, we'll create you a new character with the name: " + playerName);
+      addDelay(2000);
+      loadedPlayer = new Player(playerName);
+    }
 
     return new Player("Test");
   } // End of load
