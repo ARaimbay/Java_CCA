@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.Objects;
+import java.io.Serializable;
 
 public class MedievalGame {
 
