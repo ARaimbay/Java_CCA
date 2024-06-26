@@ -9,6 +9,7 @@ public class Armour implements Serializable {
     private final String name;
     private int durability;
     private int defenseRating;
+    private static final long serialVersionUID = 1L;
   
     /* Constructors */
     public Armour(String name, int durability, int defenseRating) {
