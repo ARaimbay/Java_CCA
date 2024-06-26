@@ -5,6 +5,7 @@ import java.io.Serializable;
 public class MedievalGame {
 
   /* Instance Variables */
+  private Player player;
 
   /* Main Method */
   public static void main(String[] args) {
@@ -51,6 +52,7 @@ public class MedievalGame {
 
   private void save() {
     // Add save functionality here
+    String fileName = instanceVariable.getAttribute() + ".srv";
 
   } // End of save
 
