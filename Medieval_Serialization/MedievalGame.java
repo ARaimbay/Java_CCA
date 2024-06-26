@@ -1,6 +1,11 @@
 import java.util.Scanner;
 import java.util.Objects;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
 import java.io.Serializable;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
 
 public class MedievalGame {
 
@@ -53,6 +58,10 @@ public class MedievalGame {
   private void save() {
     // Add save functionality here
     String fileName = instanceVariable.getAttribute() + ".srv";
+    FileOutputStream userSaveFile = new FileOutputStream(fileName);
+    ObjectOutputStream playerSaver = new ObjectOutputStream(FileOutputStream);
+    ObjectOutputStream.writeObject(this.player);
+
 
   } // End of save
 
