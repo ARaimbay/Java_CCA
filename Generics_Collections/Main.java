@@ -3,5 +3,6 @@ public class Main {
       String myWord = "Hello";
       Book myBook = new Book("My Book");
       // Create `Container` references and print statement below...
+      System.out.println(myWord);
     }
   }
