@@ -3,6 +3,8 @@ public class Main {
       String test1 = "Double";
       double test2 = 5.8;
   
-      // Enter code below...  
+      public static <T> boolean isDouble(T object){
+        return object instanceof boolean;
+      }  
     }
   }
