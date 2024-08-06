@@ -1,4 +1,4 @@
-public class Book {
+public class Book implements Retriever<String> {
     private String name;
   
     public Book(String name) {
@@ -11,5 +11,10 @@ public class Book {
   
     public String getName() {
       return this.name;
+    }
+
+    @Override
+    public String retrieveData(){
+        return this.name;
     }
   }
