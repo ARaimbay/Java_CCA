@@ -6,6 +6,9 @@ public class Main {
       boolean isTest1Double = Main.isDouble(test1);
       boolean isTest2Double = Main.isDouble(test2);
 
+      System.out.println(isTest1Double);
+      System.out.println(isTest2Double);
+
       }  
       public static <T> boolean isDouble(T object){
         return object instanceof Double;
